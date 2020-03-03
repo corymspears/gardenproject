@@ -1,3 +1,14 @@
 .jumbotron {
-    background-image: "https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    /* background-image: url("https://images.pexels.com/photos/1662567/pexels-photo-1662567.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: 30%; */
+    text-align: center;
+    background-color: #FFFDEF;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+.row {
+    justify-content: center;
 }

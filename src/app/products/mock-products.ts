@@ -1,4 +1,5 @@
-export const plants = [
+import {Product} from '../product'
+export const plants: Product[] = [
 
     { id: 1, product_name: "plant1", product_description: "Wigfo fa pe lovvi cet pergofew wogamu vuzma holzu mowaf jiwmo hubafwe inheglek bahi igtunalo va.", product_price: 5, product_image: "A"},
     { id: 2, product_name: "plant2", product_description: "Ver bisnoc fop gulubcak zed hafeasi ne linuf lasa hogimu fu vo.", product_price: 5, product_image: "B" },

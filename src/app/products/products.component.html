@@ -2,44 +2,30 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Welcome to Our Products Page</h1>
-        <p class="lead">Here you will find all the products we have available for purchase.  Please contact us should you have any questions about any of these items</p>
+        <p class="lead">Here you will find all the products we have available for purchase.  
+            <br />
+            Please contact us should you have any questions about any of these items</p>
 </div>
 </div>
 
-<div class="container">
+<!-- <ul class="products">
+    <li *ngFor="let plant of plants">
+        <span class="badge">{{plant.id}}</span> {{plant.product_name}}
+    </li>
+</ul> -->
+<div class="container-fluid">
     <div class="row">
-        <div class="column" sm=4 >
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="column" sm=4>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+        <div class="card-deck">           
+            <div class="row card-group">
+                <div *ngFor="let plant of plants" class="card" col="lg-3">
+                    <img class="card-img-top" >{{plant.product_image}}
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-        </div> 
-
-        <div class="column" sm=4>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h4 class="card-title">{{plant.product_name}}</h4>
+                        <p class="card-text">{{plant.product_description}}</p>
+                        <a href="#" class="btn btn-primary" >Add to Cart</a>
                     </div>
                 </div>
-            </div>  
-</div>     
+            </div>
+        </div>     
+    </div>
 </div>
-
