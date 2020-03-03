@@ -4,21 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ProductComponent,
+    ProductsComponent,
     ContactComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
