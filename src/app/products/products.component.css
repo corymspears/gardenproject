@@ -16,10 +16,12 @@
 .btn {
     background-color: #FFE579;
     color: #3A5267;
+    float: right;
 }
 
 .card-footer {
     background-color: #3A5267;
+    color: white;
 }
 
 .card-body {

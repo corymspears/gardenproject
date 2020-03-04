@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
 import {ApiService} from '../api.service';
 
 @Component({
@@ -9,8 +8,8 @@ import {ApiService} from '../api.service';
 })
 export class ProductsComponent implements OnInit {
 
-  // plants = plants;
   plants: any;
+  showButton: boolean = false
 
   constructor(private plantService: ApiService) {}
 
@@ -23,4 +22,9 @@ export class ProductsComponent implements OnInit {
     .subscribe(plants => this.plants = plants)
   }
 
+  deletePlant(id){
+    console.log(id)
+    this.plantService.deletePlants(id)
+    .subscribe(plants => this.getPlants())
+}
 }

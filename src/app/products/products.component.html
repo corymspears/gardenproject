@@ -17,8 +17,9 @@
             <p class="card-text">{{plant.product_description}}</p>
         </div>
         <div class="card-footer">
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary" >Delete</a>
+            <p class="card-text">${{plant.product_price}}.99
+            <a class="btn btn-primary">Add to Cart</a>
+            <a class="btn btn-primary" *ngIf= "showButton" (click)="deletePlant(plant.id)">Delete</a>
         </div>
     </div>
 </div>

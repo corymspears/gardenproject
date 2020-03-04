@@ -5,15 +5,13 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
-import { AdminComponent } from './admin/admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiFetchComponent } from './api-fetch/api-fetch.component';
-import { BindTextComponent } from './bind-text/bind-text.component';
-import { LoopComponent } from './loop/loop.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,19 +19,18 @@ import { LoopComponent } from './loop/loop.component';
     AboutComponent,
     ProductsComponent,
     ContactComponent,
-    AdminComponent,
     NavbarComponent,
     HomepageComponent,
     ApiFetchComponent,
-    BindTextComponent,
-    LoopComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   
     providers: [],

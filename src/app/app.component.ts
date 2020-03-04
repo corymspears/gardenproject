@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Garden Etc.';
+
+
+constructor() {
+  
+}
+
+ngOnInit(): void {
+}
+
 }
