@@ -5,27 +5,22 @@
         <p class="lead">Here you will find all the products we have available for purchase.  
             <br />
             Please contact us should you have any questions about any of these items</p>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="card" *ngFor="let plant of plants; index as i" class="card" style="width: 22rem;">       
+        <img class="card-img-top">{{plant.id}}
+        <div class="card-body">
+            <h5 class="card-title">{{plant.product_name}}</h5>
+            <p class="card-text">{{plant.product_description}}</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <a href="#" class="btn btn-primary" >Delete</a>
+        </div>
+    </div>
 </div>
 </div>
 
-<!-- <ul class="products">
-    <li *ngFor="let plant of plants">
-        <span class="badge">{{plant.id}}</span> {{plant.product_name}}
-    </li>
-</ul> -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="card-deck">           
-            <div class="row card-group">
-                <div *ngFor="let plant of plants" class="card" col="lg-3">
-                    <img class="card-img-top" >{{plant.product_image}}
-                    <div class="card-body">
-                        <h4 class="card-title">{{plant.product_name}}</h4>
-                        <p class="card-text">{{plant.product_description}}</p>
-                        <a href="#" class="btn btn-primary" >Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    </div>
-</div>

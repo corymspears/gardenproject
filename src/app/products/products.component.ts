@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product'
-import {plants } from './mock-products'
+import { Product } from '../product';
+import {ApiService} from '../api.service';
 
 @Component({
   selector: 'app-products',
@@ -9,11 +9,18 @@ import {plants } from './mock-products'
 })
 export class ProductsComponent implements OnInit {
 
-  plants = plants;
+  // plants = plants;
+  plants: any;
 
-  constructor() { }
+  constructor(private plantService: ApiService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getPlants()
+  }
+
+  getPlants(): void{
+    this.plantService.getPlants()
+    .subscribe(plants => this.plants = plants)
   }
 
 }
