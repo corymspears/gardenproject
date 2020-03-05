@@ -1,4 +1,40 @@
 .jumbotron {
     background: #fffdef;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.card {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #FFE579;
+    color:  #3C5366;
+}
+
+.card-footer {
+    background-color: #3C5366;
+    color: white;
+}
+
+.card-body {
+    background-color: #B4CFD0;
+    text-align: center;
+    color:  #3C5366;
+}
+
+.card-title {
+    font-weight:bold;
+}
+
+body {
+    justify-content: center;
+
+}
+
+.row {
+    margin-left:2rem;
 }
