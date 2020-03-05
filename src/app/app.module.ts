@@ -10,7 +10,9 @@ import { AdminComponent } from './admin/admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms'
     ContactComponent,
     AdminComponent,
     NavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
