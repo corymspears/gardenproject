@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
     showLogout: boolean = false
     showLogin: boolean = true
+    router: any;
 
     constructor(private userLogin: ApiService) {}
 
@@ -33,6 +34,7 @@ LoginUser(){
         localStorage.setItem("token", data.token)
         this.email = ""
         this.password =""
+        this.router.link(['products']);
         },
         
         error => {

@@ -4,14 +4,14 @@
         <h1 class="display-4">Welcome to Our Products Page</h1>
         <p class="lead">Here you will find all the products we have available for purchase.  
             <br />
-            Please contact us should you have any questions about any of these items</p>
+            Please <a href="contact">contact us</a> if you have any questions about any of these items</p>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="row">
     <div class="card" *ngFor="let plant of plants; index as i" class="card" style="width: 22rem;">       
-        <img class="card-img-top">{{plant.id}}
+        <img class="card-img-top" src="../assets/image/pinkbush.jpg">
         <div class="card-body">
             <h5 class="card-title">{{plant.product_name}}</h5>
             <p class="card-text">{{plant.product_description}}</p>

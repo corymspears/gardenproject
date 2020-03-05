@@ -22,8 +22,9 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     HomepageComponent,
     ApiFetchComponent,
-    LoginComponent
+    LoginComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
