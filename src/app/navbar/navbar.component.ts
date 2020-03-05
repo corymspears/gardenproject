@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  showLogin: boolean = true
+  showLogout: boolean = false
+  LoginUser: any;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    if (localStorage.getItem("token")){
+        this.showLogout = true
+        this.showLogin = false
+    }
+    }
   }
-
-}
