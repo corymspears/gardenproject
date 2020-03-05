@@ -30,6 +30,7 @@ a:hover {
     border-radius: 5px;
     border-style: double;
     overflow: hidden;
+    margin: 2em;
 }
 
 #gardenerimg:hover{

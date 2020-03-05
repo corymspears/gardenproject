@@ -11,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiFetchComponent } from './api-fetch/api-fetch.component';
+import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -23,6 +24,8 @@ import { LoginComponent } from './login/login.component';
     HomepageComponent,
     ApiFetchComponent,
     LoginComponent,
+    FooterComponent,
+    LoginComponent
   ],
   
   imports: [
