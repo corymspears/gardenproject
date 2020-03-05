@@ -1,6 +1,7 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
+    font-family: 'Roboto', sans-serif;
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -12,22 +13,37 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #3d5367;
+    font-family: 'Roboto', sans-serif;
     color: white;
     padding: 12px 20px;
-    border: none;
+    border: 5px solid white;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+  }
+
+  #country {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+  label{
+    font-family: 'Robo', sans-serif;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #c0edc7;
+    color: #3d5367
   }
   
   /* Add a background color and some padding around the form */
   .container {
+    font-family: 'Comic Sans', sans-serif;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #fffdef;
     padding: 20px;
+    margin-top: 30px;
+    color: #3d5367
   }

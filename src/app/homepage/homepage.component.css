@@ -1,6 +1,14 @@
 .header{
+    margin-top: 30px;
     text-align: center;
 }
 .par{
     padding-left: 30px;
+    padding-right: 30px;
+}
+
+#archgarden {
+    border: 5px solid #3d5367;
+    border-radius: 5px;
+    border-style: double;
 }

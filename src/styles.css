@@ -11,27 +11,33 @@ body {
     overflow-x: hidden;
 }
 
-
+.footer {
+  margin-top: 100px;
+  text-align: right;
+}
 /* Application-wide Styles */
 h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #3d5367;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
     font-size: 250%;
   }
   h2, h3 {
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #3d5367;
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
   }
   body {
     margin: 2em;
     background-color: #FFFDEF;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   body, input[type="text"], button {
     color: #333;
-    font-family: Cambria, Georgia;
+    font-family: 'Roboto', sans-serif;
   }
   /* everywhere else */
   * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }

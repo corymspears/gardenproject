@@ -1,10 +1,26 @@
 body {
     color: #3d5367;
+    font-family: 'Roboto', sans-serif;
     background: #fffdef;
     font-size: 20px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 100px;
+}
+
+a {
+    color: #3d5367;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #b2cecf;
+}
+
+#aboutbody {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 50px;
 }
 
 #gardenerimg {
@@ -19,10 +35,9 @@ body {
 #gardenerimg:hover{
     opacity: 0.5;
     transition: all 0.4s ease-in-out;
-    transform: scale(1.02)
 }
 
 #abouttext{
-    padding: 50px;
+    padding-top: 100px;
     color: #3d5367;
 }
