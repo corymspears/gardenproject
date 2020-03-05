@@ -21,8 +21,16 @@ export class ApiService {
 
     return this.http.delete(`http://localhost:3000/api/product/${id}`, {headers:reqHeaders})
   }
-  // loginAdmin(){
-  //   return this.http.post ("http://localhost:3000/api/auth/login", )
-
+  
+  LoginUser(email, password){
+    const body={
+      email: email,
+      password: password
     }
-{}
+    const reqHeaders=new HttpHeaders({
+      "Content-Type": 'application/json'
+    })
+
+    return this.http.post<any>("http://localhost:3000/api/auth/login", body, {headers:reqHeaders})  
+  }
+}

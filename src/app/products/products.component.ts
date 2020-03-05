@@ -15,6 +15,9 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     this.getPlants()
+    if (localStorage.getItem("token")){
+      this.showButton = true
+    }
   }
 
   getPlants(): void{

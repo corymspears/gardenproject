@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ApiFetchComponent } from './api-fetch/api-fetch.component';
 import { LoginComponent } from './login/login.component'
+import { Login } from './login';
 
 const routes: Routes = [
   {path:'', redirectTo: 'homepage', pathMatch:'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:"products", component: ProductsComponent},
   {path:"contact", component: ContactComponent},
   {path: "api", component: ApiFetchComponent},
-  {path: "login", component: LoginComponent}
+  {path: "login", component: LoginComponent},
+  {path: "logout", component: LoginComponent}
 ];
 
 @NgModule({
